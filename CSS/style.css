@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800&display=swap');
+
+/* <===== GENERAL STYLING =====> */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.2rem;
+    letter-spacing: -0.4px;
+    line-height: 4rem;
+    color: #fff;
+}
+/* 
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -0.5px;
+    line-height: 3rem;
+} */
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #242b37;
+}
+
+button {
+    padding: 2.19rem 4.89rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: 2.5px;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #111;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #111;
+    transition: 0.3s;
+}
+
+/* <===== HERO =====> */
+
+.hero-container{
+    background-image: url(../images/homepage/hero-bg-mobile@2x.jpg);
+    background-size: cover;
+    height: 74.8rem;
+    text-align: center;
+    padding: 0rem 2.4rem;
+}
+
+.logo {
+    padding-top: 23.2rem;
+    padding-bottom: 3.6rem;
+}
+
+.headings > h1 {
+    width: 12ch;
+    margin: 0 auto;
+    padding-bottom: 2.1rem;
+}
+
+.headings > p {
+    padding-bottom: 5.3rem;
+}
+
+/* <===== PLACE =====> */
+
+/* <===== MENU =====> */
+
+/* <===== FAMILY =====> */
+
+/* <===== RESERVATION =====> */
+
+/* <===== FOOTER =====> */
+
+/* <===== MEDIA QUERIES =====> */
+
+@media only screen and (min-width: 440px) {
+    .logo {
+        padding-top: 28rem;
+    }
+}
+
+@media only screen and (min-width: 545px) {
+    .logo {
+        padding-top: 32rem;
+    }
+}
+
+@media only screen and (min-width: 615px) {
+    .hero-container {
+        background-image: url(./images/homepage/hero-bg-tablet@2x.jpg);
+        background-position: center;
+        height: 99.2rem;
+        padding: 0rem 10rem;
+    }
+
+    .logo {
+        padding-top: 37.4rem;
+        padding-bottom: 3.8rem;
+    }
+
+    .headings > h1 {
+        font-size: 4.8rem;
+        letter-spacing: -0.6px;
+        line-height: 6.4rem;
+        padding-bottom: 2rem;
+    }
+
+    .headings > p {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-bottom: 5.2rem;
+        max-width: 48ch;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    
+    button {
+        margin-bottom: 12rem;
+    }
+}
+
+
+@media only screen and (min-width: 960px) {
+    .hero-container {
+        background-image: url(./images/homepage/hero-bg-desktop@2x.jpg);
+        text-align: left;
+        height: 82rem;
+    }
+    
+    .logo {
+        padding: 6.5rem 0rem 15.3rem 4.9rem;
+    }
+
+    .headings {
+        max-width: 90ch;
+        padding-left: 4.95rem;
+    }
+    .headings > h1 {
+        font-size: 8rem;
+        line-height: 8rem;
+        letter-spacing: -1px;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .headings > p {
+        padding-bottom: 5rem;
+        width: 35ch;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .headings {
+        max-width: 120ch;
+    }
+}
