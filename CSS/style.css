@@ -24,13 +24,18 @@ h1 {
     line-height: 4rem;
     color: #fff;
 }
-/* 
+
 h2 {
     font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: -0.5px;
-    line-height: 3rem;
-} */
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.25px;
+}
 
 p {
     font-size: 1.6rem;
@@ -41,12 +46,16 @@ p {
     color: #fff;
 }
 
-.black-text {
+.dark-text {
     color: #242b37;
 }
 
+.container {
+    padding: 0rem 2.4rem;
+}
+
 button {
-    padding: 2.19rem 4.89rem;
+    padding: 2.32rem 4.55rem;
     font-weight: 600;
     font-size: 1.7rem;
     letter-spacing: 2.5px;
@@ -66,12 +75,11 @@ button:hover {
 
 /* <===== HERO =====> */
 
-.hero-container{
+.hero{
     background-image: url(../images/homepage/hero-bg-mobile@2x.jpg);
     background-size: cover;
     height: 74.8rem;
     text-align: center;
-    padding: 0rem 2.4rem;
 }
 
 .logo {
@@ -79,31 +87,273 @@ button:hover {
     padding-bottom: 3.6rem;
 }
 
-.headings > h1 {
+.logo-img {
+    max-width: 8.24rem;
+}
+
+.headings h1 {
     width: 12ch;
     margin: 0 auto;
     padding-bottom: 2.1rem;
 }
 
-.headings > p {
+.headings p {
     padding-bottom: 5.3rem;
 }
 
-/* <===== PLACE =====> */
+/* <===== RESTAURANT =====> */
+
+.place,
+.locally {
+    text-align: center;
+}
+
+.image-container {
+    padding-bottom: 4.8rem;
+}
+
+.image-1 {
+    background-image: url(../images/homepage/enjoyable-place-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    min-height: 40rem;
+    margin: -7rem 0rem auto;
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.lines {
+    display: none;
+}
+
+.restaurant h2 {
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+    padding-top: 3.6rem;
+    padding-bottom: 1.3rem;
+}
+
+.restaurant p {
+    padding-bottom: 10.1rem;
+}
+
+.image-2 {
+    background-image: url(../images/homepage/locally-sourced-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 40rem;
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
 
 /* <===== MENU =====> */
+.menu {
+    background-color: #111;
+    text-align: center;
+}
+
+.salmon,
+.beef,
+.chocolate {
+    background-image: url(../images/homepage/chocolate-mobile@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32.7rem;
+    height: 24.5rem;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+}
+
+.salmon {
+    background-image: url(../images/homepage/salmon-mobile@2x.jpg)
+}
+
+.beef {
+    background-image: url(../images/homepage/beef-mobile@2x.jpg);
+}
+
+
+.menu-intro svg {
+    margin-top: 7.2rem;
+}
+
+.menu-intro h2 {
+    padding-top: 3.6rem;
+    padding-bottom: 1.3rem;
+}
+
+.menu-intro p {
+    max-width: 32.7rem;
+    margin: 0 auto;
+    padding-bottom: 6.1rem;
+}
+
+.plates-info {
+    border-bottom: 1px solid #97979740;
+}
+
+.plates-texts {
+    max-width: 29rem;
+    margin: 0 auto;
+}
+
+.plates-texts h3 {
+    padding-top: 3.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.plates-texts p {
+    padding-bottom: 5.4rem;
+}
+
+.plates-texts .last-child {
+    padding-bottom: 10.2rem;
+}
+
 
 /* <===== FAMILY =====> */
+.family-img {
+    /* background-image: url(../images/homepage/family-gathering-mobile@2x.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    max-height: 40rem;
+    margin-top: 8rem;
+    margin-bottom: 4.9rem;
+}
 
-/* <===== RESERVATION =====> */
+.family-img img {
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-text { 
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #4c4c4c50;
+    padding-top: 8rem;
+}
+
+.slider-text p {
+    /* padding-top: 5rem; */
+    padding-bottom: 1.6rem;
+    font-size: 1.7rem;
+    letter-spacing: 2.5px;
+    line-height: 2.8rem;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.gathering-lines {
+    width: 5rem;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
+  }
+
+.gathering-lines.active {
+    background-color: #9E7F66;
+}
+.gathering-event.active {
+    color: #4c4c4c;
+}
+
+
+.slider-text p:hover {
+    color: #4c4c4c;
+    transition: 0.3s;
+}
+
+.family-info {
+    text-align: center;
+}
+
+.family-info h2{
+    padding-top: 2.7rem;
+    padding-bottom: 1.3rem;
+}
+
+.family-info p {
+    padding-bottom: 2.7rem;
+}
+
+.family-btn {
+    text-align: center;
+    padding-bottom: 12.4rem;
+}
+
+.family-btn button:hover {
+    color: #111;
+    border: 1px solid #111;
+}
+
+/* <===== CALL TO ACTION =====> */
+.cta {
+    background-image: url(../images/homepage/ready-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 32.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.cta-btn button{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    background-color:rgba(255, 255, 255, 0);
+}
+
+.cta-btn button:hover {
+    background-color: #fff;
+}
 
 /* <===== FOOTER =====> */
+footer {
+    background-color: #111;
+    text-align: center;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    padding-top: 8rem;
+    min-width: 10.342rem;
+}
+
+.address {
+    padding-top: 4.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.open-times {
+    padding-bottom: 7.8rem;
+}
+
+.footer-info p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
 
 /* <===== MEDIA QUERIES =====> */
 
 @media only screen and (min-width: 440px) {
     .logo {
         padding-top: 28rem;
+    }
+
+    .cta {
+        justify-content: center;
     }
 }
 
@@ -113,12 +363,11 @@ button:hover {
     }
 }
 
-@media only screen and (min-width: 615px) {
-    .hero-container {
-        background-image: url(./images/homepage/hero-bg-tablet@2x.jpg);
+@media only screen and (min-width: 615px) { /* =====> TABLET <=====*/
+    .hero{
+        background-image: url(../images/homepage/hero-bg-tablet@2x.jpg);
         background-position: center;
         height: 99.2rem;
-        padding: 0rem 10rem;
     }
 
     .logo {
@@ -126,61 +375,528 @@ button:hover {
         padding-bottom: 3.8rem;
     }
 
-    .headings > h1 {
+    .logo-img {
+        max-width: 10.4rem;
+    }
+    .headings h1 {
         font-size: 4.8rem;
         letter-spacing: -0.6px;
         line-height: 6.4rem;
         padding-bottom: 2rem;
     }
 
-    .headings > p {
+    .headings p {
         font-size: 2rem;
         line-height: 3rem;
-        padding-bottom: 5.2rem;
-        max-width: 48ch;
+        width: 48ch;
         margin: 0 auto;
-        /* border: 1px solid red; */
+        padding-bottom: 5.2rem;
+    }
+
+    /* <====== RESTAURANT =====> */
+    .restaurant {
+        background-image: url(../images/patterns/pattern-curve-top-right.svg), 
+                          url(../images/patterns/pattern-curve-top-left.svg);
+        background-repeat: no-repeat;
+        background-position-y: 19.2rem, bottom;
+        background-position-x: -51.65rem, 38.5rem;
+    }
+    .place,
+    .locally {
+        padding: 0rem 7.35rem;
+        /* margin: 0rem 9rem; */
+        position: relative;
+    }
+    .image-1 {
+        background-image: url(../images/homepage/enjoyable-place-tablet@2x.jpg);
+        min-height: 36rem;
+        margin: -9.5rem 0rem auto;
+    }
+    .lines {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 23rem;
+        right: 1.5rem;
+    }
+
+    .image-2 {
+        background-image: url(../images/homepage/locally-sourced-tablet@2x.jpg);
+        min-height: 36rem;
+    }
+
+    .restaurant h2 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.5px;
+        padding-top: 3.9rem;
+        padding-bottom: 2.7rem;
+    }
+
+    .restaurant p {
+        font-size: 2rem;
+        line-height: 3rem;
+        max-width: 38ch;
+        margin: 0 auto;
+        padding-bottom: 11.8rem;
+    }
+
+    /* <====== MENU =====> */
+    .menu-intro svg {
+        margin-top: 9.6rem;
+    }
+
+    .menu-intro h2 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.05px;
+        padding-bottom: 2.7rem;
     }
     
-    button {
-        margin-bottom: 12rem;
+    .menu-intro p {
+        font-size: 2rem;
+        line-height: 3rem;
+        max-width: 44.8rem;
+        text-align: center;
+    }
+
+    .plates {
+        padding-bottom: 9.6rem;
+        position: relative;
+    }
+
+    .plates-info {
+        display: flex;
+        text-align: left;
+        width: 57.3rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .plates-info::after {
+        content: '';
+        position: relative;
+        right: 42.8rem;
+        transform: translatey(-3.1rem);
+        width: 10rem;
+        height: 0.13rem;
+        background-color: #9E7F66;
+    }
+
+    .plates-info:nth-child(1) {
+        padding-bottom: 2.4rem;
+    }
+
+    .plates-info:nth-child(2),
+    .plates-info:nth-child(3) {
+        padding: 2.4rem 0rem;
+    }
+
+    .plates-info:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .plates-texts {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 6.2rem;
+    }
+
+    .plates-texts h3 {
+        padding-top: 0;
+    }
+
+    .plates-texts p {
+        width: 90%;
+        padding-bottom: 0rem;
+    }
+
+    .salmon,
+    .beef,
+    .chocolate {
+        background-size: cover;
+        background-position: center;
+        height: 9.6rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    .salmon {
+        background-image: url(../images/homepage/salmon-desktop-tablet@2x.jpg);
+        width: 17.12rem;
+    }
+
+    .beef {
+        background-image: url(../images/homepage/beef-desktop-tablet@2x.jpg);
+        width: 16.966rem;
+    }
+
+    .chocolate{
+        background-image: url(../images/homepage/chocolate-desktop-tablet@2x.jpg);
+        width: 16.515rem;
+    }
+
+    .plates-texts .last-child {
+        padding-bottom: 0rem;
+    }
+
+        /* <====== FAMILY =====> */
+
+    .family {
+        background-image: url(../images/patterns/pattern-curve-top-right.svg);
+        background-repeat: no-repeat;
+        background-position-x: -51.65rem;
+        padding-top: 12rem;
+        position: relative;
+    }
+    
+    .family-img {
+        /* background-image: url(../images/homepage/family-gathering-tablet@2x.jpg); */
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        width: 57.3rem;
+        height: 36rem;
+        margin: 0 auto;
+
+    }
+
+    .family-img img {
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+        height: 60rem;
+        width: 54rem;
+    }
+    
+
+    .family-info h2 {
+        font-size: 4.8rem;
+        letter-spacing: -0.5px;
+        line-height: 4.8rem;
+        padding-top: 4.7rem;
+        padding-bottom: 1.9rem;
+    }
+
+    .family-info p {
+        font-size:  2rem;
+        line-height: 3rem;
+        width: 470px;
+        margin: 0 auto;
+        padding-bottom: 6rem;
+    }
+
+    .slider-text {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+
+    .gathering-lines {
+        width: 5rem;
+        bottom: 1rem;
+      }
+
+    .slider-text p {
+        font-size: 1.7rem;
+        padding-top: 5.7rem;
+    }
+
+    .family-btn {
+        padding-bottom: 12rem;
+    }
+
+    .family .lines {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 8.2rem;
+        left: 3.95rem;
+    }
+
+    /* <===== CALL TO ACTION =====> */
+    .cta {
+        background-image: url(../images/homepage/ready-bg-tablet@2x.jpg);
+        height: 27.2rem;
+    }
+
+    .cta h2 {
+        font-size: 4.8rem;
+        letter-spacing: -0.5px;
+        line-height: 4.8rem;
+    }
+    
+    /* <===== FOOTER =====> */
+    footer {
+        text-align: left;
+    }
+
+    .footer-logo {
+        margin: 0 12.958rem 0 3.9rem; 
+        padding-top: 6.4rem;
+        min-width: 10.342rem;
+    }
+
+    footer .container {
+        display: flex;
+    }
+
+    .address {
+        padding-top: 6.6rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .open-times {
+        padding-bottom: 7.8rem;
     }
 }
 
 
-@media only screen and (min-width: 960px) {
-    .hero-container {
-        background-image: url(./images/homepage/hero-bg-desktop@2x.jpg);
+@media only screen and (min-width: 1024px) {
+    .hero {
+        background-image: url(../images/homepage/hero-bg-desktop@2x.jpg);
         text-align: left;
         height: 82rem;
     }
     
     .logo {
-        padding: 6.5rem 0rem 15.3rem 4.9rem;
+        padding: 6.5rem 0rem 15.3rem 16.3rem;
     }
 
     .headings {
         max-width: 90ch;
-        padding-left: 4.95rem;
+        padding-left: 16rem;
     }
-    .headings > h1 {
+
+    .headings h1 {
         font-size: 8rem;
         line-height: 8rem;
         letter-spacing: -1px;
-        width: 100%;
-        padding-bottom: 2rem;
+        width: 12ch;
+        padding-bottom: 1rem;
     }
 
-    .headings > p {
-        padding-bottom: 5rem;
+    .headings p {
+        padding-bottom: 4rem;
         width: 35ch;
         margin: 0;
     }
 
+    /* <====== RESTAURANT =====> */
+    .restaurant {
+        background-position-y: 25rem, 110rem;
+        background-position-x: -2.5rem, 64rem;
+    }
+
+    .lines {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 28.2rem;
+        right: 3rem;
+    }
+    
+    .place,
+    .locally {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+        padding: 0rem;
+    }
+
+    .place .restaurant-info {
+        position: relative;
+        right: 9rem;
+        min-width: 33.7rem;
+    }
+
+    .locally .restaurant-info {
+        margin-left: 2rem;
+        min-width: 33.7rem;
+    }
+
+    .place {
+        margin-right: 14rem;
+    }
+
+    .locally {
+        flex-direction: row-reverse;
+        margin-left: 14rem;
+    }
+
+    .image-container .image-1 {
+        margin-bottom: 12.1rem;
+    }
+
+    .image-container {
+        padding-bottom: 0;
+        margin: 0rem 14.1rem;
+    }
+
+
+    .image-1 {
+        background-image: url(../images/homepage/enjoyable-place-desktop@2x.jpg);
+        min-height: 72rem;
+        min-width: 54rem;
+        margin: -7rem 0rem auto;
+    }
+   
+    .image-2 {
+        background-image: url(../images/homepage/locally-sourced-desktop@2x.jpg);
+        min-height: 72rem;
+        min-width: 54rem;
+    }
+
+        /* <====== MENU =====> */
+    .menu {
+        margin: -8rem 0rem auto;
+    }
+
+    .menu .container {
+        display: flex;
+    }
+
+    .menu-intro,
+    .menu-intro p{
+        text-align: left;
+    }
+
+    .menu-intro {
+        padding-top: 0rem;
+        margin-left: 14.1rem;
+        margin-right: 12.5rem;
+    }
+
+    .menu-intro svg {
+        margin-top: 20rem;
+    }
+
+    .plates {
+        margin-top: 25rem;
+    }
+
+        /* <====== FAMILY =====> */
+    
+    .family {
+        background-image: url(../images/patterns/pattern-curve-top-right.svg);
+        background-repeat: no-repeat;
+        background-position-x: -33rem;
+        padding-top: 12rem;
+        position: relative;
+    }
+
+    .family .container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 5rem;
+    }
+
+    .family-img {
+        /* background-image: url(../images/homepage/family-gathering-desktop@2x.jpg); */
+        width: 54rem;
+        min-height: 60rem;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 16rem;
+        padding-right: 0;
+        margin-right: 0;
+        z-index: 1;
+    }
+
+    .slider-text {
+        flex-direction: column;
+        padding-top: 7.9rem;
+    }
+
+    .gathering-lines {
+        left: 2.5rem;
+    }
+
+    .slider-text p {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .family-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1.5rem;
+    }
+
+    .family-info{
+        order: -1;
+        text-align: left;
+        
+    }
+    .family-btn{
+        order: -1;
+        padding-bottom: 0;
+    }
+    
+    .slider-text p::after {
+        left: -9rem;
+        bottom: 3rem;
+    }
+    
+    /* .slider-text p:hover::after {
+        width: 12rem;        
+    } */
+
+    .family .lines {
+        left: 14.5rem;
+    }
+
+    /* <===== CALL TO ACTION =====> */
+    .cta {
+        background-image: url(../images/homepage/ready-bg-desktop@2x.jpg);
+        height: 24rem;
+    }
+
+    .cta .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .cta-btn button{
+        margin: 0;
+    }
+
+    /* <===== FOOTER =====> */
+    footer .container {
+        align-items: center;
+    }
+    .footer-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12.4rem ;
+    }
+    .footer-logo {
+        padding: 7.8rem 19.258rem 12.2rem 14.1rem;
+        margin: 0;
+    }
+
+    .footer-info p {
+        padding: 0;
+    }
+
+    .address,
+    .open-times {
+        padding: 0;
+    }
+    
 }
 
-@media only screen and (min-width: 1200px) {
-    .headings {
-        max-width: 120ch;
-    }
+@media only screen and (min-width: 1350px) {
+        .gathering-lines {
+        position: relative;
+        width: 12rem;
+        bottom: 3.2rem;
+        left: -17rem;
+        transform: translateX(0);
+      }
 }

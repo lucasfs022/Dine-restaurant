@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800&display=swap');
+
+/* <===== GENERAL STYLING =====> */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.2rem;
+    letter-spacing: -0.4px;
+    line-height: 4rem;
+    color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.25px;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.dark-text {
+    color: #242b37;
+}
+
+.container {
+    padding: 0rem 2.4rem;
+}
+
+button {
+    font-family: 'League Spartan', sans-serif;
+    padding: 2.32rem 4.725rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: 2.5px;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #111;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #111;
+    transition: 0.3s;
+}
+
+.form {
+    position: relative;
+}
+
+.form .errormsg {
+    /* position: absolute; */
+    font-size: 1rem;
+    font-weight: 500;
+    /* margin-top: 1rem; */
+    padding-left: 1.6rem;
+    letter-spacing: -0.12px;
+    color: #B54949;
+    display: none;
+}
+
+.errormsg.show {
+    display: block;
+  }
+
+.form-label {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    text-align: center;
+    display: none;
+    background-color: #fff;
+    margin-top: .8rem;
+    height: 8rem;
+    width: 7rem;
+    z-index: 2;
+    padding: .3rem;
+    box-shadow: 0rem 2rem 8rem -1.5rem rgba(56, 66, 85, 0.5);
+}
+
+.dropdown-menu-items {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdown-checked {
+    margin-right: 1.557rem;
+    opacity: 0;
+}
+
+.dropdown-checked.checked {
+    opacity: 1;
+}
+
+.dropdown-menu.open {
+    display: block;
+    z-index: 2;
+}
+
+.dropdown-arrow.open {
+    -webkit-transform: scaleY(-1) translateY(0.4rem);
+    transform: scaleY(-1) translateY(0.4rem);
+}
+
+
+.datetime-field-name.error {
+    color: #B54949;
+    padding-bottom: 0;
+  }
+
+.input-box.error {
+    color: #B54949;
+    border-bottom: 1px solid #B54949;
+  }
+
+  
+  
+/* <===== HERO =====> */
+
+.booking-hero{
+    background-image: url(../images/booking/hero-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 60rem;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 5.6rem;
+    padding-bottom: 4.4rem;
+}
+
+.logo-img {
+    max-width: 8.24rem;
+}
+
+.headings h1 {
+    margin: 0 auto;
+    padding-bottom: 2.1rem;
+}
+
+.headings p {
+    margin: 0 auto;
+    padding-bottom: 1.9rem;
+}
+
+.headings button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.headings button:hover {
+    background-color: #fff;
+}
+
+/* <===== FORM =====> */
+
+.form p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.form .container {
+    margin: -13.8rem 2.4rem 8.6rem;
+    padding: 0rem 3.2rem;
+    background-color: #fff;
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.4rem;
+}
+
+.input-box {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #11111180;
+    padding-left: 1.6rem;
+    border: none;
+    border-bottom: 2px solid #11111150;
+    cursor: pointer;
+    outline: none;
+}
+
+.input-box:hover {
+    color: #111111;
+    border-bottom: 2px solid #111111;
+    transition: 0.4s;
+}
+
+.input-field input,
+.input-wrapper input {
+    padding-bottom: 1.4rem;
+
+}
+
+.datetime-container {
+    padding-top: 3.4rem;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-day-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding-bottom: .6rem;
+    border-bottom: 2px solid #11111150;
+    cursor: pointer;
+}
+
+.dropdown-day-wrapper:hover {
+    border-bottom: 2px solid #111111;
+}
+
+.dropdown-day {
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.input-container .input-box {
+    max-width: 7.3rem;
+}
+
+.num-of-people {
+    padding-top: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #11111150;
+}
+
+.num-of-people p {
+    font-weight: 700;
+    padding-bottom: 1.6rem;
+}
+
+.btn-container {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.reservation-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 3.2rem 0rem;
+    line-height: 2.8rem;
+    padding: 1.72rem 3.6rem;
+}
+
+.reservation-btn:hover {
+    border: 1.5px solid #111;
+}
+
+.dropdown-arrow,
+.num-of-people-btn {
+    cursor: pointer;
+} 
+
+.svg {
+    display: none;
+}
+
+/* <===== FOOTER =====> */
+
+footer {
+    background-color: #111;
+    text-align: center;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    padding-top: 8rem;
+    min-width: 10.342rem;
+}
+
+.address {
+    padding-top: 4.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.open-times {
+    padding-bottom: 7.8rem;
+}
+
+.footer-info p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 615px) {
+    /* <===== HERO =====> */
+    
+    .booking-hero{
+        background-image: url(../images/booking/hero-bg-tablet.jpg);
+        text-align: left;
+    }
+
+    .logo {
+        padding-left: 1.5rem;
+        padding-top: 5.6rem;
+        padding-bottom: 7rem;
+    }
+
+    .headings {
+        text-align: center;
+    }
+    .headings h1 {
+        font-size: 4.8rem;
+        letter-spacing: -0.6px;
+        line-height: 6.4rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .headings p {
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 47ch;
+    }
+
+    .headings button {
+        display: none;
+    }
+
+    /* <===== FORM =====> */
+
+    .form .container {
+        
+        margin: -23rem auto;
+        margin-bottom: 8.6rem;
+        max-width: 54rem;
+    }
+
+    .input-field {
+        padding-top: 5rem;
+    }
+
+    .datetime-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-container {
+        min-width: 28.9rem;
+    }
+
+    .reservation-btn {
+        padding: 1.72rem 12.6rem;
+    }
+
+    /* <===== FOOTER =====> */
+
+    footer .container {
+        display: flex;
+    }
+
+    .footer-logo {
+        margin: 0rem;
+        padding: 6.4rem 12.958rem 0rem 3.9rem
+    }
+    
+    .address {
+        padding-top: 6.4rem;
+        padding-bottom: 3.2rem;
+    }
+    
+    .open-times {
+        padding-bottom: 7.8rem;
+    }
+    
+    .footer-info p {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1285px) {
+    /* <===== HERO =====> */
+    
+    .booking-hero{
+        background-image: url(../images/booking/hero-bg-desktop@2x.jpg);
+    }
+
+    .logo {
+        padding-left: 14.3rem;
+        padding-top: 6.5rem;
+        padding-bottom: 15.3rem;
+    }
+
+    .headings {
+        text-align: left;
+        padding-left: 14.1rem;
+    }
+
+    .headings h1 {
+        font-size: 8rem;
+        letter-spacing: -1px;
+        line-height: 8rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .headings p {
+        margin: 0;
+        width: 38ch;
+    }
+
+    /* <===== FORM =====> */
+    .form {
+        background-image: url(../images/patterns/pattern-curve-bottom-right.svg);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        height: 55rem;
+        position: relative;
+    }
+
+    .svg {
+        display: block;
+        position: absolute;
+        right: 70.5rem;
+        bottom: 3.5rem;
+    }
+
+    .form .container {
+        min-height: 54.5rem;
+        max-width: 54rem;
+        position: relative;
+        left: 625px;
+        bottom: 110px;
+        margin: -23rem 11.4rem 8.6rem;
+    }
+
+    .reservation-btn {
+        margin-bottom: 4.8rem;
+    }
+
+    /* <===== FOOTER =====> */
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 12.4rem ;
+        margin-top: 7.8rem;
+    }
+    .footer-logo {
+        padding: 7.8rem 19.258rem 12.2rem 14.1rem;
+        margin: 0;
+    }
+
+    .footer-info p {
+        padding: 0;
+    }
+
+    .address,
+    .open-times {
+        padding: 0;
+    }
+}
